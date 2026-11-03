@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-cream: #faf7f0;
+    --color-gold: #c4a468;
+    --color-gold-dark: #8c7035;
+    --color-forest: #283829;
+    --color-olive: #475a48;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+    background-color: #f7f4ed;
+    color: #2c382b;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at top center, #ffffff 0%, #faf7f0 50%, #f3eee3 100%);
+    overflow-x: hidden;
+  }
+
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes musicBar1 {
+  0%, 100% { height: 30%; }
+  50% { height: 100%; }
+}
+
+@keyframes musicBar2 {
+  0%, 100% { height: 100%; }
+  50% { height: 40%; }
+}
+
+@keyframes musicBar3 {
+  0%, 100% { height: 60%; }
+  50% { height: 90%; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.animate-musicBar1 {
+  animation: musicBar1 1.2s ease-in-out infinite;
+}
+
+.animate-musicBar2 {
+  animation: musicBar2 0.9s ease-in-out infinite;
+}
+
+.animate-musicBar3 {
+  animation: musicBar3 1.4s ease-in-out infinite;
+}
+
+/* Calligraphy font helpers for Bride & Groom */
+.font-alex-brush {
+  font-family: 'Alex Brush', cursive, serif;
+}
+
+.font-great-vibes {
+  font-family: 'Great Vibes', cursive, serif;
+}
+
+.font-couple-capital {
+  font-family: 'Great Vibes', cursive, serif;
+  display: inline-block;
+  font-size: 1.15em;
+  margin-right: 0.02em;
+  vertical-align: baseline;
+  line-height: 0.9;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ebd8;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbb892;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8946e;
+}
