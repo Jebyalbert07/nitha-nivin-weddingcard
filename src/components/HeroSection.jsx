@@ -40,19 +40,21 @@ export const HeroSection = ({ onOpenCardModal }) => {
             With Gratitude to God
           </p>
           <p className="font-['Cinzel'] text-[11px] sm:text-xs tracking-[0.2em] text-[#787062] uppercase max-w-xl mx-auto leading-relaxed">
-            We cordially invite you to share in our joy as we celebrate the engagement and wedding of our daughter
+            We cordially invite you to share in our joy as we celebrate the engagement and wedding of
           </p>
         </div>
 
-        {/* Bride Name in Magnificent Script Font */}
+        {/* Groom Name */}
         <div className="my-6">
-          <h1 className="font-['Alex_Brush'] text-5xl sm:text-7xl md:text-8xl text-[#243325] font-normal leading-tight tracking-normal">
-            Nitha Yohannan
-          </h1>
+          <h2 className="font-['Alex_Brush'] text-5xl sm:text-7xl md:text-8xl text-[#243325] font-normal leading-tight tracking-normal">
+            Nivin Sunny George
+          </h2>
           <p className="font-['Cinzel'] text-xs uppercase tracking-[0.25em] text-[#8c7035] font-semibold mt-1">
-            Munjakkara Bhavan, Pattazhy
+            Kaithakattu Loveland, Kulanada
           </p>
         </div>
+
+
 
         {/* Conjunction with floral flourish */}
         <div className="flex items-center justify-center gap-3 my-4">
@@ -63,13 +65,13 @@ export const HeroSection = ({ onOpenCardModal }) => {
           <span className="w-12 h-px bg-[#c4a468]/60"></span>
         </div>
 
-        {/* Groom Name */}
+        {/* Bride Name in Magnificent Script Font */}
         <div className="my-6">
-          <h2 className="font-['Alex_Brush'] text-5xl sm:text-7xl md:text-8xl text-[#243325] font-normal leading-tight tracking-normal">
-            Nivin Sunny George
-          </h2>
+          <h1 className="font-['Alex_Brush'] text-5xl sm:text-7xl md:text-8xl text-[#243325] font-normal leading-tight tracking-normal">
+            Nitha Yohannan
+          </h1>
           <p className="font-['Cinzel'] text-xs uppercase tracking-[0.25em] text-[#8c7035] font-semibold mt-1">
-            Kaithakattu Loveland, Kulanada
+            Munjakkara Bhavan, Pattazhy
           </p>
         </div>
 

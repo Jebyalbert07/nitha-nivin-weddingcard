@@ -87,8 +87,8 @@ export const RsvpSection = () => {
       data.attendance === 'attending'
         ? 'Joyfully Accepts'
         : data.attendance === 'declined'
-        ? 'Regretfully Declines'
-        : 'Will Confirm Later';
+          ? 'Regretfully Declines'
+          : 'Will Confirm Later';
 
     const eventsList = [];
     if (data.events.engagement) eventsList.push('Engagement (9 Jan)');
@@ -137,8 +137,8 @@ export const RsvpSection = () => {
               {submittedData.attendance === 'attending'
                 ? 'Your RSVP has been joyfully recorded. We eagerly await celebrating our special days with you!'
                 : submittedData.attendance === 'declined'
-                ? 'Thank you for letting us know. Your prayers and blessings mean the world to us.'
-                : 'Thank you for letting us know! Please confirm when your schedule is finalized.'}
+                  ? 'Thank you for letting us know. Your prayers and blessings mean the world to us.'
+                  : 'Thank you for letting us know! Please confirm when your schedule is finalized.'}
             </p>
 
             {/* Summary Voucher */}
@@ -240,11 +240,10 @@ export const RsvpSection = () => {
                 ].map((option) => (
                   <label
                     key={option.value}
-                    className={`cursor-pointer border rounded-2xl p-3.5 flex flex-col justify-center transition-all ${
-                      formData.attendance === option.value
+                    className={`cursor-pointer border rounded-2xl p-3.5 flex flex-col justify-center transition-all ${formData.attendance === option.value
                         ? 'border-[#8c7035] bg-[#f2e9d8] shadow-sm'
                         : 'border-[#ded4c3] bg-white hover:bg-[#faf7f0]'
-                    }`}
+                      }`}
                   >
                     <input
                       type="radio"
@@ -309,7 +308,7 @@ export const RsvpSection = () => {
                 </div>
 
                 {/* Guest Count & Drink Choice (from template2.tilda.ws) */}
-                <div className="grid sm:grid-cols-2 gap-4 pt-2">
+                {/* <div className="grid sm:grid-cols-2 gap-4 pt-2">
                   <div>
                     <label className="block text-xs font-semibold uppercase tracking-wider text-[#455444] mb-1.5">
                       Total Attending Guests
@@ -344,7 +343,7 @@ export const RsvpSection = () => {
                       <option value="Coffee & Tea">Authentic Filter Coffee &amp; Tea</option>
                     </select>
                   </div>
-                </div>
+                </div> */}
               </div>
             )}
 

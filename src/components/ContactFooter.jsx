@@ -144,9 +144,14 @@ export const ContactFooter = ({ onOpenCardModal }) => {
         </div>
 
         {/* Bottom Credits & Back to Top */}
-        <div className="mt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-stone-400 border-t border-[#374938] pt-6 gap-3">
+        <div className="mt-8 flex flex-col items-center justify-between text-[15px] text-stone-400 border-t border-[#374938] pt-6 gap-5">
           <p>
-            With Love &amp; Gratitude • Yohannan &amp; George Families
+            With Love &amp; Gratitude • Jaison, Nisha, Johann, Nivya, Stalin &amp; John Yohannan.
+          </p>
+
+
+          <p>
+            Crafted with ❤️ by <a href="https://quininfosolutions.com" target="_blank"> Quin Info Solutions </a>
           </p>
 
           <button
@@ -158,7 +163,7 @@ export const ContactFooter = ({ onOpenCardModal }) => {
           </button>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 };
 
