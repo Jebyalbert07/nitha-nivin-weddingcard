@@ -153,7 +153,8 @@ export const ContactFooter = ({ onOpenCardModal }) => {
           <p>
             Crafted with ❤️ by <a href="https://quininfosolutions.com" target="_blank"> Quin Info Solutions </a>
           </p>
-
+          <p>
+            Crafted with ❤️ by <a href="https://quininfosolutions.com" target="_blank"> Quin Info Solutions </a> </p>
           <button
             onClick={scrollToTop}
             className="inline-flex items-center gap-1.5 text-stone-300 hover:text-[#c4a468] transition-colors"
